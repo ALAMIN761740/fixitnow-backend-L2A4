@@ -1,0 +1,14 @@
+model Service {
+    id                String            @id @default(uuid())
+    title             String
+    description       String?
+    price             Float
+    estimatedDuration Int?
+    isAvailable       Boolean           @default(true)
+    categoryId        String
+    category          Category          @relation(fields: [categoryId], references: [id])
+    technicianId      String
+    technician        TechnicianProfile @relation(fields: [technicianId], references: [id])
+
+    bookings Booking[]
+}

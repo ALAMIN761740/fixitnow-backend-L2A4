@@ -1,0 +1,18 @@
+model TechnicianProfile {
+    id            String   @id @default(uuid())
+    userId        String   @unique
+    user          User     @relation(fields: [userId], references: [id])
+    bio           String?
+    experience    Int?
+    location      String?
+    skills        String[]
+    hourlyRate    Float?
+    avgRating     Float    @default(0)
+    completedJobs Int      @default(0)
+    isVerified    Boolean  @default(false)
+
+    services     Service[]
+    availability Availability[]
+    bookings     Booking[]      @relation("TechnicianBookings")
+    reviews      Review[]       @relation("TechnicianReviews")
+}
