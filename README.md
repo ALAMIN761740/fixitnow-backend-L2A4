@@ -7,6 +7,8 @@ FixItNow is a production-ready backend API for a home services marketplace. It p
 - Live API URL: [LIVE_API_URL_HERE]
 - Postman collection: https://github.com/ALAMIN761740/fixitnow-backend-L2A4/blob/main/postman/fixitnow-backend.postman_collection.json
 
+- Demo Video (3–5 Minutes):** https://youtu.be/mydxjBvuSNg
+
 ## Features
 - Authentication (JWT)
 - Role-based authorization (Customer, Technician, Admin)
