@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "ts-node-dev --respawn src/server.ts",
     "build": "tsc -p tsconfig.json",
-    "seed": "ts-node-dev --respawn src/seed.ts"
+    "seed": "ts-node-dev --respawn src/seed.ts",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
