@@ -5,11 +5,16 @@ FixItNow is a production-ready backend API for a home services marketplace. It p
 **Repository placeholders (fill before submission)**
 - Backend GitHub repo: https://github.com/ALAMIN761740/fixitnow-backend-L2A4
 
-- Live API URL: [LIVE_API_URL_HERE]
+- Live API URL: https://fixitnow-backend-l2a4-1.onrender.com
 
 - Postman collection: https://github.com/ALAMIN761740/fixitnow-backend-L2A4/blob/main/postman/fixitnow-backend.postman_collection.json
 
 - Demo Video (3–5 Minutes):** https://youtu.be/mydxjBvuSNg
+
+## Admin Credentials (seeded)
+
+- Email: `admin@fixitnow.com`
+- Password: `admin123`
 
 ## Features
 - Authentication (JWT)
@@ -131,10 +136,6 @@ All error responses follow this shape:
 }
 ```
 
-## Admin Credentials (seeded)
-
-- Email: `admin@fixitnow.com`
-- Password: `admin123`
 
 ## Project Architecture & Notes
 
