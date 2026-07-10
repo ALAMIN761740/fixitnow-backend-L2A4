@@ -7,11 +7,13 @@ import bookingRoutes from "../modules/booking/booking.route";
 import paymentRoutes from "../modules/payment/payment.route";
 import reviewRoutes from "../modules/review/review.route";
 import adminRoutes from "../modules/admin/admin.route";
+import userRoutes from "../modules/user/user.route";
 
 const router = Router();
 
 const moduleRoutes = [
     { path: "/auth", route: authRoutes },
+    { path: "/users", route: userRoutes },
     { path: "/categories", route: categoryRoutes },
     { path: "/services", route: serviceRoutes },
     { path: "/technicians", route: technicianRoutes },
