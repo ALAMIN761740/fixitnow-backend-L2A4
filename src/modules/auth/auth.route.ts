@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { authController } from "./auth.controller";
+import { userController } from "../user/user.controller";
 import { authValidation } from "./auth.validation";
 import validateRequest from "../../middlewares/validateRequest";
 import { auth } from "../../middlewares/auth";
@@ -9,16 +9,16 @@ const router = Router();
 router.post(
     "/register",
     validateRequest(authValidation.registerValidationSchema),
-    authController.registerUser
+    userController.registerUser
 );
 
 router.post(
     "/login",
     validateRequest(authValidation.loginValidationSchema),
-    authController.loginUser
+    userController.loginUser
 );
 
-router.get("/me", auth, authController.getMe);
-router.post("/seed-admin", authController.seedAdmin);
+router.get("/me", auth, userController.getMe);
+router.post("/seed-admin", userController.seedAdmin);
 
 export default router;
